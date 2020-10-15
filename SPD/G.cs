@@ -15,7 +15,6 @@ namespace SPD
 
             DateTime result = DateTime.Now;
             CultureInfo arabicCulture = new CultureInfo("fa-IR");
-            //status = DateTime.TryParseExact(date, "dd/MM/yyyy", arabicCulture, DateTimeStyles.None, out result);
             status = DateTime.TryParseExact(date, "yyyy/MM/dd", arabicCulture, DateTimeStyles.None, out result);
 
             return status;
